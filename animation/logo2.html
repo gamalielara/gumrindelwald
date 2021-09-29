@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gumrindelwald animation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body{
+            font-family: Atkinson Hyperlegible, sans-serif;
+            background-color: #7a7a7a;
+            --font-size : 8vmax;
+        }
+
+        div.mytitle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+  
+        div.animate{
+            display: inline-block;
+            margin:0;
+            display: flex;
+        }
+
+        h1{
+            display: inline-block;
+            font-size: var(--font-size);
+        }
+
+        h1.com{color: #000}
+
+        div.gray{color:#313131}
+        
+        div.white{color: #b3b3b3;}
+
+        div.gray-animate{
+            width: calc(var(--font-size) * 4.19);
+            overflow: hidden;
+            transition: 1s ease;
+        }
+
+        div.white-animate{
+            width: calc(var(--font-size) * 1.45);
+            overflow: hidden;
+            transition: 1s ease;
+        }
+
+        div.animated-text h1{
+            transform: translateX(-100%);
+            transition: 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="mytitle">
+        <div class="animate gray">
+            <h1>g</h1>
+            <div class="animated-text gray-animate"><h1>umrindel</h1></div>
+        </div>
+        <div class="animate white">
+            <h1><i>w</i></h1>
+            <div class="animated-text white-animate"><h1><i>ald</i></h1></div>
+            <!-- <h1 class="com">.com</h1> -->
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.animated-text').forEach((div) => div.style.width = '0');
+        
+        function showText() {
+            document.querySelector('.gray-animate').style.width = 'calc(var(--font-size) * 4.19)';
+            document.querySelector('.gray-animate > h1').style.transform = 'translateX(0)';
+            setTimeout(()=>{
+                document.querySelector('.white-animate').style.width = 'calc(var(--font-size) * 1.45)';
+                document.querySelector('.white-animate > h1').style.transform = 'translateX(0)';
+            }, 500);
+            setTimeout(hideText, 2500);
+        }
+
+        function hideText(){
+            document.querySelector('.gray-animate > h1').style.transform = 'translateX(-100%)';
+            document.querySelector('.gray-animate').style.width = '0';
+            document.querySelector('.white-animate > h1').style.transform = 'translateX(-100%)';
+            document.querySelector('.white-animate').style.width = '0';
+        }
+
+        window.addEventListener('load', ()=>setTimeout(()=>showText(), 1000));
+        setTimeout(()=>setInterval(showText, 4000),1500);
+    </script> 
+</body>
+</html>

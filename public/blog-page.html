@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy the Views of the Crows - gumrindelwald</title>
+    <link rel="icon" href="../src/img/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!---------FULL MENU--------->
+    <menu class="w-full h-screen fixed hidden sm:hidden bg-white z-50 top-0 right-0 p-8 m-0" id="full-menu">
+        <div class="full-menu-container h-full relative">
+            <button class="absolute text-2xl -top-4 right-8" id="close-full-menu-button"><i class="fas fa-times"></i></button>
+            <div class="menus-wrapper h-full flex justify-center items-center my-auto">
+                <div class="menus">
+                    <img src="../src/img/logo.svg" class="w-1/2 mx-auto mb-4" alt="gumrindelwald logo">
+                    <ul class="flex flex-col flex-1 justify-center items-center gap-4 text-gray-800">
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="index.html">Home</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="dashboard.html">Blogs</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </menu>
+
+    <!---------HEADER--------->
+    <header class="sticky top-0 h-auto z-10 w-full bg-white">
+        <nav class="container w-full flex items-center md:px-8 p-4 mx-auto">
+            <div class="logo py-1"><img src="../src/img/logo.svg" class="sm:h-7 h-5" alt="gumrindelwald logo"></div>
+            <ul class="hidden sm:flex flex-1 justify-end items-end text-lg gap-6">
+                <li class="cursor-pointer"><a href="index.html">Home</a></li>
+                <li class="cursor-pointer"><a href="dashboard.html">Blogs</a></li>
+                <li class="cursor-pointer"><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu flex flex-1 justify-end sm:hidden ml-4 cursor-pointer" id="hamburger-button"><i class="text-2xl fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!---------MAIN SECTION--------->
+    <section class="container main-section md:px-8 sm:px-4 px-1 box-border mx-auto relative lg:w-5/6 w-full">
+        <img src="../src/img/examples/1.jpg" alt="" class="thumbnail-img w-full lg:h-80 h-1/6 my-4 object-cover">
+        <div class="content sm:flex">
+            <main class="md:w-4/5 sm:w-2/3 px-4 mt-6 mx-auto">
+                <article class="text-black mt-4">
+                    <header class="article-header">
+                        <div class="article-title mt-4">
+                            <h1 class="md:text-5xl sm:text-2xl text-xl text-center font-bold">Enjoy the View of the Crows</h1>
+                            <h5 class="md:text-lg sm:text-base text-sm text-center italic">Published on <span class="published-on">Sat, September 25 2021</span></h5>
+                            <h6 class="md:text-sm sm:text-sm text-center italic">Written on <span class="written-on">Sat, September 25 2021</span></h6>
+                        </div>
+                        <div class="languages flex mt-4 items-center">
+                            <h3 class="font-xs">Read this article in: </h3>
+                            <a href="#"><div class="language id flex hover:cursor-pointer hover:text-white mx-2 w-8 h-8 bg-gray-300 hover:bg-gray-700 rounded-full text-gray-700 text-sm font-bold justify-center items-center">ID</div></a>
+                            <a href="#"><div class="language en flex hover:cursor-pointer hover:text-white mx-2 w-8 h-8 bg-gray-300 hover:bg-gray-700 rounded-full text-gray-700 text-sm font-bold justify-center items-center">EN</div></a>
+                            <a href="#"><div class="language de flex hover:cursor-pointer hover:text-white mx-2 w-8 h-8 bg-gray-300 hover:bg-gray-700 rounded-full text-gray-700 text-sm font-bold justify-center items-center">DE</div></a>
+                            <a href="#"><div class="language ru flex hover:cursor-pointer hover:text-white mx-2 w-8 h-8 bg-gray-300 hover:bg-gray-700 rounded-full text-gray-700 text-sm font-bold justify-center items-center">RU</div></a>
+                        </div>
+                        <div class="share">
+                            <h3 class="font-xs">Share: 
+                                <a href="" class="text-lg"><i class="fab fa-twitter text-gray-500 hover:text-gray-700"></i></a>
+                                <a href="" class="text-lg"><i class="fab fa-instagram-square text-gray-500 hover:text-gray-700"></i></a>
+                                <a href="" class="text-lg"><i class="fab fa-facebook text-gray-500 hover:text-gray-700"></i></a>
+                                <a href="" class="text-lg"><i class="fab fa-whatsapp-square text-gray-500 hover:text-gray-700"></i></a>
+                            </h3>
+                        </div>
+                        <div class="article-tags mb-8">
+                            <h3 class="font-xs my-2">Category: 
+                                <a href="#" class="inline-block"><div class="category category-books inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Books</div></a>
+                            </h3>
+                            <h3 class="font-xs my-4">Tags: 
+                                <a href="#"><div class="tag tag-psychology inline-block rounded bg-gray-100 text-xs hover:bg-black hover:text-white m-2 p-1">Psychology</div></a>
+                                <a href="#"><div class="tag tag-review inline-block rounded bg-gray-100 text-xs hover:bg-black hover:text-white m-2 p-1">Review</div></a>
+                                <a href="#"><div class="tag tag-books inline-block rounded bg-gray-100 text-xs hover:bg-black hover:text-white m-2 p-1">Books</div></a>
+                                <a href="#"><div class="tag tag-mental-health inline-block rounded bg-gray-100 text-xs hover:bg-black hover:text-white m-2 p-1">Mental Health</div></a>
+                            </h3>
+                        </div>
+                    </header>
+                    <p class="md:text-base text-sm my-4 text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, velit autem. Saepe quam provident officia quis voluptatem dignissimos, voluptate, similique exercitationem animi alias at aperiam deleniti illum, perferendis porro 
+                        aspernatur eum iure repellendus maxime quas veniam veritatis. Deserunt, quibusdam voluptatem, dolor quisquam recusandae, asperiores ipsum tempora dicta commodi quos reprehenderit fugiat facilis non. Libero, placeat obcaecati. 
+                        Aperiam nesciunt est qui repellat atque provident sed ad facere accusantium laudantium a tempore iure expedita animi quisquam eos similique eum corporis laborum iste, maiores iusto. Tempore accusamus laudantium soluta quibusdam placeat,
+                        alias eveniet deleniti. Incidunt illum harum sit accusamus sint maxime labore accusantium!
+                    </p>
+                    <h2 class="section-heading text-lg font-semibold mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, error</h2>
+                    <p class="md:text-base text-sm my-4 text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, velit autem. Saepe quam provident officia quis voluptatem dignissimos, voluptate, similique exercitationem animi alias at aperiam deleniti illum, perferendis porro 
+                        aspernatur eum iure repellendus maxime quas veniam veritatis. Deserunt, quibusdam voluptatem, dolor quisquam recusandae, asperiores ipsum tempora dicta commodi quos reprehenderit fugiat facilis non. Libero, placeat obcaecati. 
+                        Aperiam nesciunt est qui repellat atque provident sed ad facere accusantium laudantium a tempore iure expedita animi quisquam eos similique eum corporis laborum iste, maiores iusto. Tempore accusamus laudantium soluta quibusdam placeat,
+                        alias eveniet deleniti. Incidunt illum harum sit accusamus sint maxime labore accusantium!
+                    </p>
+                    <blockquote class="md:text-lg text-base italic my-8 w-3/4 mx-auto bg-gray-200 py-4 pl-10 pr-4 rounded">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos quo, aliquid repellendus asperiores accusamus iusto ex tempora optio corporis?
+                        <cite>- The Outsider, page 505</cite>
+                    </blockquote>
+                    <h2 class="section-heading text-lg font-semibold mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, error</h2>
+                    <p class="md:text-base text-sm my-4 text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, velit autem. Saepe quam provident officia quis voluptatem dignissimos, voluptate, similique exercitationem animi alias at aperiam deleniti illum, perferendis porro 
+                        aspernatur eum iure repellendus maxime quas veniam veritatis. Deserunt, quibusdam voluptatem, dolor quisquam recusandae, asperiores ipsum tempora dicta commodi quos reprehenderit fugiat facilis non. Libero, placeat obcaecati. 
+                        Aperiam nesciunt est qui repellat atque provident sed ad facere accusantium laudantium a tempore iure expedita animi quisquam eos similique eum corporis laborum iste, maiores iusto. Tempore accusamus laudantium soluta quibusdam placeat,
+                        alias eveniet deleniti. Incidunt illum harum sit accusamus sint maxime labore accusantium!
+                    </p>
+                    <p class="md:text-base text-sm my-4 text-justify">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, velit autem. Saepe quam provident officia quis voluptatem dignissimos, voluptate, similique exercitationem animi alias at aperiam deleniti illum, perferendis porro 
+                        aspernatur eum iure repellendus maxime quas veniam veritatis. Deserunt, quibusdam voluptatem, dolor quisquam recusandae, asperiores ipsum tempora dicta commodi quos reprehenderit fugiat facilis non. Libero, placeat obcaecati. 
+                        Aperiam nesciunt est qui repellat atque provident sed ad facere accusantium laudantium a tempore iure expedita animi quisquam eos similique eum corporis laborum iste, maiores iusto. Tempore accusamus laudantium soluta quibusdam placeat,
+                        alias eveniet deleniti. Incidunt illum harum sit accusamus sint maxime labore accusantium!
+                    </p>
+                </article>
+
+                <section class="container like-comment-section md:mt-4 mt-8 w-full">
+                    <button class="like-button text-lg"><i class="fas fa-thumbs-up"></i><span class="likes-count mx-2">12</span></button>
+                    <button class="like-button text-lg hover:cursor-default"><i class="far fa-comment"></i><span class="likes-count mx-2">12</span></button>
+                    <div class="comments">
+                        <h3 class="text-xl font-semibold my-4">Comments</h3>
+                        <div class="comments-wrapper md:text-base text-sm">
+                            <div class="comment-thread-1 thread">
+                                <div class="comment-1 comment-by-user" id="comment-1">
+                                    <header class="comment-header flex comment-meta" id="user-comment">
+                                        <img src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&d=mm&r=g" alt="user profile" class="mr-2 rounded-full" width="50">
+                                        <div class="username">
+                                            <h2 class="text-lg font-semibold"><span class="user-name" id="user-name">John Doe</span></h2>
+                                            <h3 class="text-base semibold"><time datetime="2021-09-27">Sep 27 2021</time></h3>
+                                        </div>
+                                    </header>
+                                    <article class="comment-container bg-gray-200 my-2 p-2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut illo necessitatibus molestiae omnis magni minus fugit id autem nisi quo nulla culpa veniam in, tenetur, fuga debitis quaerat ad? Illo molestiae amet autem nulla dolorem at rem, ducimus dolor aspernatur voluptatem soluta obcaecati consequatur atque sint perspiciatis consectetur ea? Ratione?</p>
+                                    </article>
+                                    <button class="reply-comment bg-black text-white mb-8 p-2" type="submit" name="reply-btn">Reply</button>
+                                </div>
+                
+                                <div class="comment-2 comment-by-author pl-8" id="comment-2">
+                                    <header class="comment-header flex comment-meta" id="user-comment">
+                                        <img src="../src/img/me.png" alt="user profile" class="mr-2" width="50">
+                                        <div class="username">
+                                            <h2 class="text-lg font-semibold"><span class="author-name" id="author-name">Author, Ara Gamaliel</span></h2>
+                                            <h3 class="text-base semibold"><time datetime="2021-09-29">Sep 29 2021</time></h3>
+                                        </div>
+                                    </header>
+                                    <article class="comment-container bg-gray-200 my-2 p-2">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fuga tempore iure excepturi, placeat, nesciunt at odit quas ex maiores numquam eaque modi possimus adipisci unde deleniti quisquam quod error ipsum reiciendis. Sit voluptatibus cum voluptates. A magnam, harum aspernatur doloribus ab sint rem voluptatum ipsa. 
+                                            Excepturi culpa distinctio quas adipisci voluptatibus dicta molestias corporis ratione quos? Blanditiis iure earum provident rem dolorum inventore illum esse, corrupti maxime, doloremque autem error natus explicabo tenetur hic. Non ab quod adipisci veniam quam voluptate laboriosam hic at esse nihil saepe magnam corrupti labore, 
+                                            quo tempora nemo incidunt sapiente minima officia velit nulla?
+                                        </p>
+                                    </article>
+                                    <button class="reply-comment bg-black text-white p-2 mb-8" type="submit" name="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                            <div class="comment-thread-2 thread">
+                                <div class="comment-1 comment-by-user" id="comment-1">
+                                    <header class="comment-header flex comment-meta" id="user-comment">
+                                        <img src="http://2.gravatar.com/avatar/e297925dbb035adc0b67aa14da4dcc0a?s=120&d=mm&r=g" alt="user profile" class="mr-2 rounded-full" width="50">
+                                        <div class="username">
+                                            <h2 class="text-lg font-semibold"><span class="user-name" id="user-name">Daniel Wald</span></h2>
+                                            <h3 class="text-base semibold"><time datetime="2021-09-27">Sep 30 2021</time></h3>
+                                        </div>
+                                    </header>
+                                    <article class="comment-container bg-gray-200 my-2 p-2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut illo necessitatibus molestiae omnis magni minus fugit id autem nisi quo nulla culpa veniam in, tenetur, fuga debitis quaerat ad? Illo molestiae amet autem nulla dolorem at rem, ducimus dolor aspernatur voluptatem soluta obcaecati consequatur atque sint perspiciatis consectetur ea? Ratione?</p>
+                                    </article>
+                                    <button class="reply-comment bg-black text-white mb-8 p-2" type="submit" name="reply-btn">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enter-comment" id="enter-comment">
+                        <h3 class="text-lg font-semibold">Enter Comment</h3>
+                        <form action="" method="post" class="comment-form">
+                            <input type="text" name="username" class="bg-gray-200 my-2 w-full p-2" placeholder="Your name (Required)" required>
+                            <input type="email" name="user-email" class="bg-gray-200 my-2 w-full p-2" placeholder="Your email (Optional)">
+                            <textarea name="comment-area" id="comment-area" class="w-full bg-gray-200 my-2 p-4" rows="5" placeholder="Enter your comment here" required></textarea>
+                            <button class="reply-comment bg-black text-white p-2 my-2" type="submit" name="submit-comment">Reply</button>
+                        </form>
+                    </div>
+                </section>
+
+            </main>
+            
+            <aside class="md:w-1/5 sm:w-1/3 mt-0 sm:mt-8">
+                <div class="search-post">
+                    <form action="" class="search-blog">
+                        <h3 class="text-xl text-black font-semibold text-center">Search Blogs</h3>
+                        <input type="text" class="bg-gray-200 p-2 rounded my-2 w-3/4" placeholder="Blog Title" required>
+                        <button type="submit" class="search-blog-button p-2 rounded bg-gray-200" name="search-blog"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="tags">
+                    <h3 class="text-xl text-black font-semibold text-center">Blog Tags</h3>
+                    <div class="tags-container container flex flex-wrap justify-items-start">
+                        <a href="#"><div class="tag tag-psychology inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Psychology</div></a>
+                        <a href="#"><div class="tag tag-science inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Science</div></a>
+                        <a href="#"><div class="tag tag-personal-thoughts inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Personal Thoughts</div></a>
+                        <a href="#"><div class="tag tag-film inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Film</div></a>
+                        <a href="#"><div class="tag tag-books inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Books</div></a>
+                        <a href="#"><div class="tag tag-self-help inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Self-Help</div></a>
+                        <a href="#"><div class="tag tag-productivity inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Productivity</div></a>
+                        <a href="#"><div class="tag tag-psychological-thriller inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Psychological Thriller</div></a>
+                        <a href="#"><div class="tag tag-review inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Review</div></a>
+                        <a href="#"><div class="tag tag-experience inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Experience</div></a>
+                        <a href="#"><div class="tag tag-mental-health inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Mental Health</div></a>
+                        <a href="#"><div class="tag tag-science-fiction inline-block rounded text-xs bg-gray-100 hover:bg-black hover:text-white m-2 p-1">Science Fiction</div></a>
+                    </div>
+                </div>
+
+                <div class="categories my-2">
+                    <h3 class="text-xl text-black font-semibold text-center">Categories</h3>
+                    <a href="#" class="inline-block"><div class="category category-books inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Books</div></a>
+                    <a href="#" class="inline-block"><div class="category category-films inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Film</div></a>
+                    <a href="#" class="inline-block"><div class="category category-science inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Science</div></a>
+                    <a href="#" class="inline-block"><div class="category category-psychology inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Psychology</div></a>
+                    <a href="#" class="inline-block"><div class="category category-personal-thoughts inline-block rounded text-xs bg-gray-300 hover:bg-black hover:text-white m-2 p-1">Personal Thoughts</div></a>
+                </div>
+
+                <form action="" method="post" class="subscribe-form my-4">
+                    <h3 class="text-xl text-black font-semibold text-center">Subscribe to this blog</h3>
+                    <h4 class="text-sm text-justify">
+                        Do you want to be the first person who reads the latest articles here? Subscribe to this blog and I'll 
+                        let you know immediately whenever new articles has been posted.
+                    </h4>
+                    <input type="text" class="bg-gray-200 p-2 rounded block my-2 mx-auto w-3/4" placeholder="Enter your name" required>
+                    <input type="email" class="bg-gray-200 p-2 rounded block my-2 mx-auto w-3/4" placeholder="Enter your email here" required>
+                    <button class="bg-gray-500 p-2 text-white rounded font-bold md:text-xs block mt-2 mx-auto">Subscribe</button>
+                </form>
+            </aside>
+        </div>
+    </section>
+    
+    
+
+    <!---------FOOTER--------->
+    <footer class="bg-black text-white mt-4 p-8 w-full">
+        <img src="../src/img/logo-white.svg" alt="gumrindelwald icon" class="h-8 mx-auto mb-4">
+        <p class="text-center">Copyright &copy; 2021. Created and developed by <a href="#" class="underline">Ara Gamaliel Boanerges</a>. All rights reserved.</p>
+        <div class="social-media-footer mt-2 text-center text-white">
+            <a href="https://www.instagram.com/gamalielboanerges/" target="_blank" class="mx-2"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="https://twitter.com/gumrindelwald" target="_blank" class="mx-2"><i class="fab fa-twitter text-lg"></i></a>
+            <a href="https://www.linkedin.com/in/aragamaliel/" target="_blank" aria-label="LinkedIn" class="mx-2"><i class="fab fa-linkedin text-lg"></i></a>
+            <a href="mailto:gumrindelwald@gmail.com?subject=Enter the subject here" target="_blank" class="mx-2 hover:text-gray-600 underline" type="_blank"><i class="fas fa-envelope-open-text text-lg"></i></a>  
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

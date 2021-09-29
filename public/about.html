@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ara Gamaliel - gumrindelwald</title>
+    <link rel="icon" href="../src/img/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <!---------FULL MENU--------->
+    <menu class="w-full h-screen fixed hidden sm:hidden bg-white z-50 top-0 right-0 p-8 m-0" id="full-menu">
+        <div class="full-menu-container h-full relative">
+            <button class="absolute text-2xl -top-4 right-8" id="close-full-menu-button"><i class="fas fa-times"></i></button>
+            <div class="menus-wrapper h-full flex justify-center items-center my-auto">
+                <div class="menus">
+                    <img src="../src/img/logo.svg" class="w-1/2 mx-auto mb-4" alt="gumrindelwald logo">
+                    <ul class="flex flex-col flex-1 justify-center items-center gap-4 text-gray-800">
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="index.html">Home</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="dashboard.html">Blogs</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </menu>
+
+    <!---------HEADER--------->
+    <header class="sticky top-0 h-auto z-10 w-full bg-white">
+        <nav class="container w-full flex items-center md:px-8 p-4 mx-auto">
+            <div class="logo py-1"><img src="../src/img/logo.svg" class="sm:h-7 h-5" alt="gumrindelwald logo"></div>
+            <ul class="hidden sm:flex flex-1 justify-end items-end text-lg gap-6">
+                <li class="cursor-pointer"><a href="index.html">Home</a></li>
+                <li class="cursor-pointer"><a href="dashboard.html">Blogs</a></li>
+                <li class="cursor-pointer"><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu flex flex-1 justify-end sm:hidden ml-4 cursor-pointer" id="hamburger-button"><i class="text-2xl fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!---------ABOUT ME SECTION--------->
+    <section class="about-me md:px-8 sm:px-8 px-4 mx-auto">
+        <h1 class="md:text-6xl sm:text-4xl text-2xl font-semibold text-center my-4">Ara Gamaliel Boanerges</h1>
+        <div class="container md:flex justify-center items-center h-full mt-4 mx-auto">
+            <div class="my-image mx-auto lg:w-1/6 md:w-1/4 w-1/2 md:mb-0 mb-4 md:mx-0 h-full">
+                <img src="../src/img/me.png" alt="Ara Gamaliel Boanerges Simarmata" class="w-full h-1/4 my-auto mr-4 object-cover">
+            </div>
+            <div class="about-me-text lg:w-3/6 md:w-3/4 w-full flex items-center">
+                <div class="about-me-body">
+                    <p class="about-me text-base text-black text-justify md:ml-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio consequatur rerum nemo? Molestiae dolore laudantium delectus aperiam esse, fuga error dolores libero assumenda quod. Suscipit fugiat 
+                        voluptatem sint deserunt sunt numquam illo delectus neque, nobis perferendis ratione amet animi distinctio quam, dolorum sapiente cumque qui non tempora dolores nulla, nisi saepe. Unde harum, assumenda, 
+                        doloremque placeat quidem pariatur provident nulla fuga dolores porro esse saepe. Blanditiis, dolores? Nesciunt nam saepe alias quo distinctio dolores iusto commodi doloribus provident itaque laboriosam 
+                        velit magni quod, obcaecati perspiciatis sequi voluptatem quaerat assumenda harum dolorum dicta blanditiis quis dolore! Earum dolor expedita dolorem dicta?
+                    </p>
+                    <div class="links-wrapper my-4">
+                        <p class="about-me font-semibold text-base text-black text-justify md:ml-4">How to find me:</p>
+                        <div class="links md:ml-4">
+                            <a href="https://www.instagram.com/gamalielboanerges/" class=" hover:text-gray-600 underline"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+                            <a href="https://twitter.com/gumrindelwald" class="mx-2 hover:text-gray-600 underline"><i class="fab fa-twitter text-lg mr-1"></i>Twitter</a>
+                            <a href="https://www.linkedin.com/in/aragamaliel/" class="mx-2 hover:text-gray-600 underline"><i class="fab fa-linkedin text-lg mr-1"></i>LinkedIn</a>
+                            <a href="mailto:gumrindelwald@gmail.com?subject=Enter the subject here" class="mx-2 hover:text-gray-600 underline" type="_blank"><i class="fas fa-envelope-open-text text-lg mr-1"></i>gumrindelwald@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe sm:w-1/2 w-3/4 mx-auto my-8">
+            <form action="" method="post" class="subscribe-form my-4">
+                <h3 class="md:text-xl text-lg text-black font-semibold text-center">Subscribe to this blog</h3>
+                <h4 class="text-sm text-center">
+                    Do you want to be the first person who reads the latest articles here? Subscribe to this blog and I'll 
+                    let you know immediately whenever new articles has been posted.
+                </h4>
+                <input type="text" class="bg-gray-200 p-2 rounded block my-2 mx-auto w-3/4" placeholder="Enter your name" required>
+                <input type="email" class="bg-gray-200 p-2 rounded block my-2 mx-auto w-3/4" placeholder="Enter your email here" required>
+                <button class="bg-gray-500 p-2 text-white rounded font-bold md:text-xs block mt-2 mx-auto"><span class="text-lg">Subscribe</span></button>
+            </form>
+        </div>
+    </section>
+
+    <!---------FOOTER--------->
+    <footer class="bg-black text-white mt-4 p-8 w-full">
+        <img src="../src/img/logo-white.svg" alt="gumrindelwald icon" class="h-8 mx-auto mb-4">
+        <p class="text-center">Copyright &copy; 2021. Created and developed by <a href="#" class="underline">Ara Gamaliel Boanerges</a>. All rights reserved.</p>
+        <div class="social-media-footer mt-2 text-center text-white">
+            <a href="https://www.instagram.com/gamalielboanerges/" target="_blank" class="mx-2"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="https://twitter.com/gumrindelwald" target="_blank" class="mx-2"><i class="fab fa-twitter text-lg"></i></a>
+            <a href="https://www.linkedin.com/in/aragamaliel/" target="_blank" aria-label="LinkedIn" class="mx-2"><i class="fab fa-linkedin text-lg"></i></a>
+            <a href="mailto:gumrindelwald@gmail.com?subject=Enter the subject here" target="_blank" class="mx-2 hover:text-gray-600 underline" type="_blank"><i class="fas fa-envelope-open-text text-lg"></i></a>  
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

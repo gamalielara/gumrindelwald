@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .centered-item{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .typing-categories::after{
+        content: "";
+        width: 1px;
+        border-right: 2px solid white;
+        height: 10%;
+        margin-left: 3px;
+        animation: typing .75s infinite ease;
+    }
+
+    blockquote{
+        position: relative;
+    }
+
+    blockquote::before, blockquote::after{
+        position: absolute;
+        font-size: 2rem;
+        font-style: initial;
+        font-weight: bold;
+    }
+
+    blockquote::before{
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        top: -15px;
+        left: -15px;
+    }
+
+    blockquote::after{
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free";
+        bottom: -15px;
+        right: -15px;
+    }
+
+    @keyframes typing{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+    @media (min-width: 767px){
+        .article-view{
+            height: 10em;
+        }
+    }
+}

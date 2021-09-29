@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gumrindelwald - gamalielboanerges’s personal blog </title>
+    <link rel="icon" href="../src/img/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+</head>
+<body class="h-screen">
+    <!---------FULL MENU--------->
+    <menu class="w-full h-screen fixed hidden sm:hidden bg-white z-50 top-0 right-0 p-8 m-0" id="full-menu">
+        <div class="full-menu-container h-full relative">
+            <button class="absolute text-2xl -top-4 right-8" id="close-full-menu-button"><i class="fas fa-times"></i></button>
+            <div class="menus-wrapper h-full flex justify-center items-center my-auto">
+                <div class="menus">
+                    <img src="../src/img/logo.svg" class="w-1/2 mx-auto mb-4" alt="gumrindelwald logo">
+                    <ul class="flex flex-col flex-1 justify-center items-center gap-4 text-gray-800">
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="index.html">Home</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="dashboard.html">Blogs</a></li>
+                        <li class="cursor-pointer text-center font-semibold text-xl"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </menu>
+
+    <!---------HEADER--------->
+    <header class="sticky top-0 h-auto z-10 w-full bg-white">
+        <nav class="container w-full flex items-center md:px-8 p-4 mx-auto">
+            <div class="logo py-1"><img src="../src/img/logo.svg" class="sm:h-7 h-5" alt="gumrindelwald logo"></div>
+            <ul class="hidden sm:flex flex-1 justify-end items-end text-lg gap-6">
+                <li class="cursor-pointer"><a href="index.html">Home</a></li>
+                <li class="cursor-pointer"><a href="dashboard.html">Blogs</a></li>
+                <li class="cursor-pointer"><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu flex flex-1 justify-end sm:hidden ml-4 cursor-pointer" id="hamburger-button"><i class="text-2xl fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!----LANDING PAGE SECTION---->
+    <section class="container landing-page md:w-5/6 h-5/6 md:p-0 p-2 mx-auto">
+        <div class="landing-page-wrapper relative w-full h-full">
+            <div class="centered-item absolute w-full z-10">
+                <img class="m-auto w-5/6 sm:w-1/2" src="../src/img/logo-white.svg">
+                <h3 class="text-lg sm:text-2xl text-white text-center mt-0">gamalielboanerges’s personal blog</h3>
+                <div class="categories m-auto">
+                    <h3 class="typing-categories sm:text-xl text-base text-white text-center relative"></h3>
+                </div>
+                <p class="text-white text-center underline my-4"><a href="dashboard.html">Read Blogs<i class="fas fa-arrow-right ml-2"></i></a></p>
+                <p class="text-white text-center underline my-4"><a href="about.html">About Me<i class="fas fa-arrow-right ml-2"></i></a></p>
+            </div>
+            <div class="swiper h-full w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../src/img/hero.jpg" class="w-full h-full object-cover" alt="people silhouette"></div>
+                    <div class="swiper-slide"><img src="../src/img/hero2.jpg" class="w-full h-full object-cover" alt="a man reading a book"></div>
+                    <div class="swiper-slide"><img src="../src/img/hero3.jpg" class="w-full h-full object-cover" alt="dramatic dead tree"></div>
+                    <div class="swiper-slide"><img src="../src/img/hero4.jpg" class="w-full h-full object-cover" alt="a man standing on a plane wreck"></div>
+                    <div class="swiper-slide"><img src="../src/img/hero5.jpg" class="w-full h-full object-cover" alt="an old man reading a book"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 4000
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html>
