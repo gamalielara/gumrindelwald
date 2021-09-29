@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "cross-env NODE_ENV=production postcss src/style.css -o public/style.css",
+    "clean": "NODE_ENV=production postcss src/style.css -o public/style.css",
+    "dev":"postcss src/style.css -o public/style.css",
     "build:tailwind": "tailwind build -i src/style.css -o public/style.css"
   },
   "keywords": [],
